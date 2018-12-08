@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-header">
+  <h1> Dados do Sensor {{ idSensor }}:</h1>
+</div>
+  <div class="row">
+    <div class="col-md-10">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID do Dado</th>
+        <th>ID do Gateway</th>
+        <th>Dado</th>
+        <th>RSSI</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for dado in data_sensores.data_sensores %}
+        <tr>
+          <td>{{ dado.idDado }}</td>
+          <td>{{ dado.idGateway }}</td>
+          <td>{{ dado.Dado }}</td>
+          <td>{{ dado.RSSI }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+  </div>
+{% endblock %}
+
+

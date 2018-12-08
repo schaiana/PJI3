@@ -1,0 +1,30 @@
+.fundo {
+	background-color: #DCDCDC;
+}
+
+font { 
+	color: dimgray;
+	font-size: 20px;
+}
+
+.button {
+    background-color: gray;
+    border: none;
+    color: white;
+    width: 200px;
+	height: 50px;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.voltar {
+  background-color: transparent;
+  border:none;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+  background:rgba(255,255,255,0.5);
+}
