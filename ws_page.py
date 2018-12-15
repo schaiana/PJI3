@@ -11,7 +11,7 @@ from sqlalchemy.sql import text
 class ws_page():
 
 	def __init__(self):
-		eng = create_engine("mysql+pymysql://root:luisa@localhost/pji3")
+		eng = create_engine("mysql+pymysql://root:schaiana@localhost/pji3")
 		try:		
 			self.con = eng.connect()
 			print('Conectou no banco de dados')
